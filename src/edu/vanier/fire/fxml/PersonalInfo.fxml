@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.vanier.fire.ctrl.PersonalInfoController">
+   <children>
+      <Label layoutX="128.0" layoutY="135.0" text="Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="131.0" layoutY="209.0" text="Email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="35.0" text="Personal Information">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="226.0" layoutY="202.0" prefHeight="44.0" prefWidth="298.0" promptText="Enter your email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtName" layoutX="226.0" layoutY="128.0" prefHeight="44.0" prefWidth="298.0" promptText="Enter you name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button layoutX="406.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="25.0" prefWidth="48.0" text="Back" />
+      <Button layoutX="465.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="25.0" prefWidth="48.0" text="Save" />
+      <Button layoutX="93.0" layoutY="302.0" mnemonicParsing="false" onAction="#handleSelectLocation" prefHeight="25.0" prefWidth="123.0" text="Select Location" />
+      <Label fx:id="lblEmailNotValid" layoutX="226.0" layoutY="246.0" prefHeight="17.0" prefWidth="123.0" text="This email is not valid" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
